@@ -33,7 +33,7 @@ img {
     padding-right: 15px; 
     margin-left: auto; 
     margin-right: auto;  
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
 
 /*=========Header=========*/
@@ -209,6 +209,7 @@ display: block;
     padding-bottom: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                     rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-size: 1440px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -372,7 +373,47 @@ gap: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    
 }
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    
+
+}
+.social-link-cont{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.social-items{
+    width: 40px;
+    height: 40px;
+}
+.icon-link-three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color:#4d5ae5;
+    border-radius: 50%;
+    margin-top: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+.icon-link-three:hover{
+background-color: #404bbf;
+}
+.icon-link-three:focus{
+background-color: #404bbf;
+}
+
+.icon-section-tree{
+    fill: #f4f4fd;
+}
+
 /*section-4*/
 .section-four{
     padding-top: 120px;
@@ -401,7 +442,16 @@ justify-content: center;
     width: calc((100% - 48px) / 3);
     border: 1px solid #e7e9fc;
     border-top: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.list-item-sec-four:hover .position-content-sellers{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);  
+    transform: translateY(0%);
+}
+
 
 .section-four> .two-title{
     color: #2E2F42;
@@ -432,10 +482,35 @@ justify-content: center;
     letter-spacing: 0.02em;
 }
 
+
 .list-addition{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
-    border-top: none;
+    border-top: none;  
+}
+
+.position-content{
+    position: relative;
+    overflow: hidden;  
+}
+
+.position-content-sellers{
+    position: absolute;
+    background-color: #4d5ae5;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content-par-sec-four{
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
     
 }
 
