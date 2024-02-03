@@ -334,6 +334,7 @@ gap: 24px;
     
 .name-team-position{
     padding: 32px 0 32px;
+    
 }
 
 .title-sec-three{
@@ -371,6 +372,7 @@ gap: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 8px;
     
 }
 
@@ -381,11 +383,13 @@ gap: 24px;
     
 
 }
+/*
 .social-link-cont{
     display: flex;
     justify-content: center;
     gap: 24px;
 }
+*/
 .social-items{
     width: 40px;
     height: 40px;
@@ -443,10 +447,12 @@ justify-content: center;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-item-sec-four:hover .position-content-sellers{
+.list-item-sec-four:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);  
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.list-item-sec-four:hover .content-par-sec-four{
     transform: translateY(0%);
 }
 
@@ -492,24 +498,20 @@ justify-content: center;
     overflow: hidden;  
 }
 
-.position-content-sellers{
-    position: absolute;
-    background-color: #4d5ae5;
-    top: 0;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .content-par-sec-four{
     color: #f4f4fd;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 40px 32px;
-    
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #4d5ae5;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    overflow: hidden;
 }
 
 /* footer */
@@ -581,8 +583,6 @@ justify-content: center;
 .icon-item {
 width: 40px;
 height: 40px;
-transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .icon-link {
@@ -593,8 +593,9 @@ transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
         justify-content: center;
         background-color: #4D5AE5;
         border-radius: 50%;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+
 .icon-link:hover{
     background-color: #31d0aa;
 }
